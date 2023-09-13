@@ -1,8 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Coupang Play Enhancer",
+  "name": "쿠팡플레이 개선",
   "version": "0.0.1",
-  "description": "",
+  "description": "쿠팡플레이의 기능들을 개선해줍니다.",
+  "homepage_url": "https://github.com/nix6839/coupang-play-enhancer",
+  "icons": {
+    "48": "./assets/extension-icon-48.png",
+    "128": "./assets/extension-icon-128.png"
+  },
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
