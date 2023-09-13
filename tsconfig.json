@@ -16,5 +16,7 @@
     "noEmit": true,
 
     "outDir": "./dist"
-  }
+  },
+
+  "include": ["./src"]
 }
