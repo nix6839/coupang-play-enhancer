@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Coupang Play Enhancer",
+  "version": "0.0.1",
+  "description": "",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://www.coupangplay.com/play/*"]
+    }
+  ]
+}

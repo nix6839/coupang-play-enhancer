@@ -1,0 +1,41 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+devDependencies:
+  '@nix6839/prettier-config':
+    specifier: 1.0.8
+    version: 1.0.8(@types/prettier@2.7.3)(prettier@2.8.8)
+  '@types/prettier':
+    specifier: 2.7.3
+    version: 2.7.3
+  prettier:
+    specifier: 2.8.8
+    version: 2.8.8
+
+packages:
+
+  /@nix6839/prettier-config@1.0.8(@types/prettier@2.7.3)(prettier@2.8.8):
+    resolution: {integrity: sha512-c1eBWI+WGkZAmmkIiVn91C20eUFt17gOM6bFDTD7/LC4jpZ+AjlnVw8RjaJaDw0WzSZtbiWqupfIAHuw/ImN1g==}
+    peerDependencies:
+      '@types/prettier': ^2.7.1
+      prettier: ^2.7.1
+    peerDependenciesMeta:
+      '@types/prettier':
+        optional: true
+    dependencies:
+      '@types/prettier': 2.7.3
+      prettier: 2.8.8
+    dev: true
+
+  /@types/prettier@2.7.3:
+    resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
+    dev: true
+
+  /prettier@2.8.8:
+    resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: true
