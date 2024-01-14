@@ -4,7 +4,7 @@ import { defineConfig } from 'tsup';
 const config = defineConfig({
   outDir: './dist',
   entry: {
-    'scripts/content': './src/scripts/content.js',
+    content: './src/content.js',
   },
   format: 'esm',
   target: ['chrome117', 'edge117'],
@@ -18,6 +18,10 @@ const config = defineConfig({
     copy({
       resolveFrom: 'out',
       assets: [
+        {
+          from: ['./src/injected.js'],
+          to: './',
+        },
         {
           from: ['./src/manifest.json'],
           to: './',
