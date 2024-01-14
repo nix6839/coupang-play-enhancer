@@ -1,1 +1,11 @@
-function c(t){let e=document.createElement("script");e.src=chrome.runtime.getURL(t),e.type="module",e.onload=()=>e.remove(),(document.head||document.documentElement).append(e),console.log("inject script");}c("injected.js");
+// @ts-nocheck
+
+function injectScript(src) {
+  const s = document.createElement('script');
+  s.src = chrome.runtime.getURL(src);
+  s.type = 'module';
+  s.onload = () => s.remove();
+  (document.head || document.documentElement).append(s);
+}
+
+injectScript('injected.js');
