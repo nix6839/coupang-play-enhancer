@@ -1,18 +1,18 @@
 {
-  "name": "coupang-play-enhancer",
-  "version": "0.0.1",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "watch": "tsup --watch",
-    "build": "tsup",
-    "format": "prettier --write \"**/*.{js,cjs,json,md}\""
-  },
-  "devDependencies": {
-    "@nix6839/prettier-config": "2.2.0",
-    "esbuild-plugin-copy": "2.1.1",
-    "prettier": "3.2.5",
-    "tsup": "8.0.2"
-  },
-  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
+	"name": "coupang-play-enhancer",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"watch": "tsup --watch",
+		"build": "tsup",
+		"format": "prettier --write \"**/*.{js,cjs,json,md}\""
+	},
+	"devDependencies": {
+		"@nix6839/prettier-config": "2.2.0",
+		"esbuild-plugin-copy": "2.1.1",
+		"prettier": "3.2.5",
+		"tsup": "8.0.2"
+	},
+	"packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
 }

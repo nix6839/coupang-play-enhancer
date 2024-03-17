@@ -1,6 +1,6 @@
-import hwyConfig from '@nix6839/prettier-config'
+import hwyConfig from '@nix6839/prettier-config';
 
 /** @satisfies {import('prettier').Config} */
-const config = hwyConfig
+const config = hwyConfig;
 
-export default config
+export default config;

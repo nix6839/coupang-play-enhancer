@@ -1,8 +1,8 @@
 {
-  "json.schemas": [
-    {
-      "fileMatch": ["/src/manifest.json"],
-      "url": "https://json.schemastore.org/chrome-manifest"
-    }
-  ]
+	"json.schemas": [
+		{
+			"fileMatch": ["/src/manifest.json"],
+			"url": "https://json.schemastore.org/chrome-manifest"
+		}
+	]
 }
