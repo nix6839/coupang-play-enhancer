@@ -1,5 +1,5 @@
 // Second
-const SEEK_TIME_S = 3;
+const SEEK_TIME_S = 5;
 const PLAYBACK_SPEED_ADJUSTMENT = 0.25;
 
 /** @type {HTMLVideoElement | null} */
