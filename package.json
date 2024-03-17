@@ -9,11 +9,10 @@
     "format": "prettier --write \"**/*.{js,cjs,json,md}\""
   },
   "devDependencies": {
-    "@nix6839/prettier-config": "1.0.8",
-    "@types/prettier": "2.7.3",
+    "@nix6839/prettier-config": "2.2.0",
     "esbuild-plugin-copy": "2.1.1",
-    "prettier": "2.8.8",
-    "tsup": "7.2.0"
+    "prettier": "3.2.5",
+    "tsup": "8.0.2"
   },
-  "packageManager": "pnpm@8.7.5+sha256.c69c54d81c58e23ee23324729e68d012fe3ef3b7e62e2dc521b1141c2a36567e"
+  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
 }
