@@ -4,16 +4,22 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"watch": "tsup --watch",
-		"build": "tsup",
-		"format": "prettier --write \"**/*.{js,cjs,json,md}\""
+		"dev": "vite",
+		"build": "pnpm lint:type && vite build",
+		"preview": "vite preview",
+		"lint:type": "tsc && tsc --noEmit -p ./tsconfig.node.json",
+		"format": "prettier --write \"**/*.{tsx,ts,js,html,json,md}\""
+	},
+	"dependencies": {
+		"solid-js": "1.8.15"
 	},
 	"devDependencies": {
+		"@crxjs/vite-plugin": "2.0.0-beta.23",
 		"@nix6839/prettier-config": "2.2.0",
-		"esbuild-plugin-copy": "2.1.1",
 		"prettier": "3.2.5",
-		"tsup": "8.0.2",
-		"typescript": "5.4.2"
+		"typescript": "5.4.2",
+		"vite": "5.1.6",
+		"vite-plugin-solid": "2.10.2"
 	},
 	"packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
 }
