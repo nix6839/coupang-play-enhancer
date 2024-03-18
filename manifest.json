@@ -5,12 +5,12 @@
 	"description": "쿠팡플레이의 기능들을 개선해줍니다.",
 	"homepage_url": "https://github.com/nix6839/coupang-play-enhancer",
 	"icons": {
-		"48": "./assets/extension-icon-48.png",
-		"128": "./assets/extension-icon-128.png"
+		"48": "src/assets/extension-icon-48.png",
+		"128": "src/assets/extension-icon-128.png"
 	},
 	"content_scripts": [
 		{
-			"js": ["scripts/content.js"],
+			"js": ["src/scripts/content.js"],
 			"matches": ["https://www.coupangplay.com/play/*"]
 		}
 	]
