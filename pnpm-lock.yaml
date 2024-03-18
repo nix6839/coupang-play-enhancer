@@ -16,6 +16,9 @@ devDependencies:
   '@nix6839/prettier-config':
     specifier: 2.2.0
     version: 2.2.0(prettier@3.2.5)
+  chrome-types:
+    specifier: 0.1.273
+    version: 0.1.273
   prettier:
     specifier: 3.2.5
     version: 3.2.5
@@ -781,6 +784,10 @@ packages:
       htmlparser2: 8.0.2
       parse5: 7.1.2
       parse5-htmlparser2-tree-adapter: 7.0.0
+    dev: true
+
+  /chrome-types@0.1.273:
+    resolution: {integrity: sha512-7idHVle8LNTPrA8Kyzv5HG0+DsL8YZ1DbHEuQNMQJKbLvPF2IJLGbGhJLMAMPhmOyH8WDCgGONMMQ67u+Nm6RA==}
     dev: true
 
   /color-convert@1.9.3:

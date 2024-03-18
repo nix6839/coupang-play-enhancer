@@ -19,7 +19,9 @@
 		/* Linting */
 		"strict": true,
 		"noFallthroughCasesInSwitch": true,
-		"forceConsistentCasingInFileNames": true
+		"forceConsistentCasingInFileNames": true,
+
+		"types": ["chrome-types"]
 	},
 	"include": ["src"],
 	"references": [{ "path": "./tsconfig.node.json" }]
