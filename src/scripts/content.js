@@ -1,6 +1,22 @@
-// Second
-const SEEK_TIME_S = 5;
+import {
+	VIDEO_SEEK_TIME_DEFAULT,
+	VIDEO_SEEK_TIME_S_KEY,
+} from '../lib/core/storage.ts';
+
+const items = await chrome.storage.sync.get({
+	[VIDEO_SEEK_TIME_S_KEY]: VIDEO_SEEK_TIME_DEFAULT,
+});
+
+let VIDEO_SEEK_TIME_S = /** @type {number} */ (items[VIDEO_SEEK_TIME_S_KEY]);
 const PLAYBACK_SPEED_ADJUSTMENT = 0.25;
+
+chrome.storage.sync.onChanged.addListener((changes) => {
+	for (let [key, { newValue }] of Object.entries(changes)) {
+		if (key === VIDEO_SEEK_TIME_S_KEY) {
+			VIDEO_SEEK_TIME_S = newValue;
+		}
+	}
+});
 
 /** @type {HTMLVideoElement | null} */
 let video = null;
@@ -45,7 +61,7 @@ const EventHandlers = {
 			return;
 		}
 
-		video.currentTime -= SEEK_TIME_S;
+		video.currentTime -= VIDEO_SEEK_TIME_S;
 	},
 	ArrowRight(e) {
 		e.stopPropagation();
@@ -56,7 +72,7 @@ const EventHandlers = {
 			return;
 		}
 
-		video.currentTime += SEEK_TIME_S;
+		video.currentTime += VIDEO_SEEK_TIME_S;
 	},
 	'<'(e) {
 		e.stopPropagation();

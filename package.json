@@ -11,6 +11,7 @@
 		"format": "prettier --write \"**/*.{tsx,ts,js,html,json,md}\""
 	},
 	"dependencies": {
+		"@ark-ui/solid": "2.2.0",
 		"solid-js": "1.8.15"
 	},
 	"devDependencies": {
