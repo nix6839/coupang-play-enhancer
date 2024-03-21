@@ -5,4 +5,7 @@ import manifest from './manifest.json' with { type: 'json' };
 
 export default defineConfig({
 	plugins: [solid(), crx({ manifest })],
+	build: {
+		target: 'es2022',
+	},
 });
