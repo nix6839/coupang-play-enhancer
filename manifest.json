@@ -8,10 +8,15 @@
 		"48": "src/assets/extension-icon-48.png",
 		"128": "src/assets/extension-icon-128.png"
 	},
+	"permissions": ["storage"],
 	"content_scripts": [
 		{
 			"js": ["src/scripts/content.js"],
 			"matches": ["https://www.coupangplay.com/play/*"]
 		}
-	]
+	],
+	"options_ui": {
+		"page": "src/options/options.html",
+		"open_in_tab": false
+	}
 }

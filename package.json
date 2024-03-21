@@ -11,13 +11,17 @@
 		"format": "prettier --write \"**/*.{tsx,ts,js,html,json,md}\""
 	},
 	"dependencies": {
+		"@ark-ui/solid": "2.2.0",
 		"solid-js": "1.8.15"
 	},
 	"devDependencies": {
 		"@crxjs/vite-plugin": "2.0.0-beta.23",
 		"@nix6839/prettier-config": "2.2.0",
+		"autoprefixer": "10.4.18",
 		"chrome-types": "0.1.273",
+		"postcss": "8.4.36",
 		"prettier": "3.2.5",
+		"tailwindcss": "3.4.1",
 		"typescript": "5.4.2",
 		"vite": "5.1.6",
 		"vite-plugin-solid": "2.10.2"
