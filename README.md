@@ -12,3 +12,9 @@
 
 - [ ] 단축키에 따른 시각적인 효과 주기 (유튜브 참고)
 - [ ] 원래 쿠팡 플레이의 버튼들도 조정하기
+
+## Credits
+
+옵션 페이지의 디자인은 다음 두 라이브러리를 참고했습니다:
+- [shadcn](https://github.com/shadcn)의 [shadcn/ui](https://ui.shadcn.com/)
+- [Christian Schröter](https://github.com/cschroeter)의 [Park UI](https://park-ui.com/)
